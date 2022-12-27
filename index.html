@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="player">
+      <div class="player-button-container">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="volume-container">
+          <div class="mute-button-container"><svg class="mute-button" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M832 352v1088q0 26-19 45t-45 19-45-19l-333-333h-262q-26 0-45-19t-19-45v-384q0-26 19-45t45-19h262l333-333q19-19 45-19t45 19 19 45zm384 544q0 76-42.5 141.5t-112.5 93.5q-10 5-25 5-26 0-45-18.5t-19-45.5q0-21 12-35.5t29-25 34-23 29-36 12-56.5-12-56.5-29-36-34-23-29-25-12-35.5q0-27 19-45.5t45-18.5q15 0 25 5 70 27 112.5 93t42.5 142zm256 0q0 153-85 282.5t-225 188.5q-13 5-25 5-27 0-46-19t-19-45q0-39 39-59 56-29 76-44 74-54 115.5-135.5t41.5-173.5-41.5-173.5-115.5-135.5q-20-15-76-44-39-20-39-59 0-26 19-45t45-19q13 0 26 5 140 59 225 188.5t85 282.5zm256 0q0 230-127 422.5t-338 283.5q-13 5-26 5-26 0-45-19t-19-45q0-36 39-59 7-4 22.5-10.5t22.5-10.5q46-25 82-51 123-91 192-227t69-289-69-289-192-227q-36-26-82-51-7-4-22.5-10.5t-22.5-10.5q-39-23-39-59 0-26 19-45t45-19q13 0 26 5 211 91 338 283.5t127 422.5z" fill="#fff"/></svg></div>
+          <input class="sound-volume" type="range" min="0" max="1" step="0.01">
+        </div> 
+      </div>
+      <div class="title-song">
+        <span class="song-name"></span>
+      </div>
+      <div class="duration-player">
+        <div class="progress-colored"></div>
+        <div class="progress"></div>
+        <div class="duration-timer">
+          <div class="timer">0:00</div>      
+          <div class="duration">2:58</div>
+        </div>
+      </div> 
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city placeholder" placeholder="[Enter city]" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting greeting-text text-to-translate"></span>
+      <input type="text" class="name placeholder" placeholder="[Enter name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="settings-container">
+      <div class="popup-container">
+        <div class="popup-title text-to-translate">Settings</div>
+        <div class="language-setting">
+          <p class="popup-text"></p>
+        </div>
+        <div class="setting-box player-setting">
+          <label for="player-popup" class="setting-box_text text-to-translate">Player</label>
+          <label class="checkbox ">
+            <input type="checkbox" class="custom-checkbox" id="player" name="player" checked="checked"/>
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <div class="setting-box weather-setting">
+          <label for="weather-popup" class="setting-box_text text-to-translate">Weather</label>
+          <label class="checkbox ">
+            <input type="checkbox" class="custom-checkbox" id="weather" name="weather" checked="checked"/>
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <div class="setting-box clock-setting">
+          <label for="time-popup"class="setting-box_text text-to-translate">Time</label>
+          <label class="checkbox ">
+            <input type="checkbox" class="custom-checkbox" id="time" name="time" checked="checked"/>
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <div class="setting-box date-setting">
+          <label for="date-popup"class="setting-box_text text-to-translate">Date</label>
+          <label class="checkbox ">
+            <input type="checkbox" class="custom-checkbox" id="date" name="date" checked="checked"/>
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <div class="setting-box greeting-setting">
+          <label for="greeting-popup"class="setting-box_text text-to-translate">Greeting</label>
+          <label class="checkbox ">
+            <input type="checkbox" class="custom-checkbox" id="greeting-container" name="greeting" checked="checked"/>
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <div class="setting-box quote-setting">
+          <label for="quote-popup"class="setting-box_text text-to-translate">Quote</label>
+          <label class="checkbox ">
+            <input type="checkbox" class="custom-checkbox" id="quote-container" name="quote" checked="checked"/>
+            <div class="checkbox__checkmark"></div>
+          </label>
+        </div>
+        <div class="setting-container">
+          <p class="setting-text text-to-translate">Language</p>
+          <div class="setting-button-container">
+            <div class="setting-button setting-button-language language-en language-button-active text-to-translate" data-language="en">English</div>
+            <div class="setting-button setting-button-language language-ru text-to-translate" data-language="ru">Russian</div>
+          </div>
+        </div>
+        <div class="setting-container">
+          <p class="setting-text text-to-translate">Image source</p>
+          <div class="setting-button-container">
+            <div class="setting-button setting-button-source source-git source-button-active" data-source-class="source-git">GitHub</div>
+            <div class="setting-button setting-button-source source-unsplash " data-source-class="source-unsplash">Unsplash</div>
+            <div class="setting-button setting-button-source source-flickr " data-source-class="source-flickr">Flickr</div>
+          </div>
+          <input class="image-source-input placeholder" type="text" placeholder="[Enter tag]">
+        </div>
+        <div class="close-icon-container">
+          <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path class="a" d="M23.22,19.93,39.46,3.7A2.28,2.28,0,0,0,40,2.16,2.21,2.21,0,0,0,39.34.67,2.31,2.31,0,0,0,37.85,0a2.2,2.2,0,0,0-1.53.54L20.08,16.79,3.85.54A2.22,2.22,0,0,0,.18,2.14,2.23,2.23,0,0,0,.71,3.68L16.94,19.93.69,36.16a2.23,2.23,0,0,0-.56.73,2.2,2.2,0,0,0-.22.88,2.3,2.3,0,0,0,.15.9,2.25,2.25,0,0,0,1.26,1.26,2.33,2.33,0,0,0,.9.15,2.29,2.29,0,0,0,.89-.22,2.16,2.16,0,0,0,.72-.56L20.08,23.07,36.32,39.3a2.2,2.2,0,0,0,1.53.54,2.26,2.26,0,0,0,1.49-.65A2.21,2.21,0,0,0,40,37.7a2.28,2.28,0,0,0-.53-1.54Z" transform="translate(0.09)"/></svg>
+        </div>
+      </div>
+      <div class="blackout"></div>
+      <div class="settings-icon">
+        <span class="settings-toggle" data-test="settings-toggle" data-ob="settings-toggle"><svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.274 340.274"><path d="M293.629 127.806l-5.795-13.739c19.846-44.856 18.53-46.189 14.676-50.08l-25.353-24.77-2.516-2.12h-2.937c-1.549 0-6.173 0-44.712 17.48l-14.184-5.719c-18.332-45.444-20.212-45.444-25.58-45.444h-35.765c-5.362 0-7.446-.006-24.448 45.606l-14.123 5.734C86.848 43.757 71.574 38.19 67.452 38.19l-3.381.105-27.27 26.737c-4.138 3.891-5.582 5.263 15.402 49.425l-5.774 13.691C0 146.097 0 147.838 0 153.33v35.068c0 5.501 0 7.44 46.585 24.127l5.773 13.667c-19.843 44.832-18.51 46.178-14.655 50.032l25.353 24.8 2.522 2.168h2.951c1.525 0 6.092 0 44.685-17.516l14.159 5.758c18.335 45.438 20.218 45.427 25.598 45.427h35.771c5.47 0 7.41 0 24.463-45.589l14.195-5.74c26.014 11 41.253 16.585 45.349 16.585l3.404-.096 27.479-26.901c3.909-3.945 5.278-5.309-15.589-49.288l5.734-13.702c46.496-17.967 46.496-19.853 46.496-25.221V151.88c-.005-5.519-.005-7.446-46.644-24.074zM170.128 228.474c-32.798 0-59.504-26.187-59.504-58.364 0-32.153 26.707-58.315 59.504-58.315 32.78 0 59.43 26.168 59.43 58.315-.006 32.177-26.656 58.364-59.43 58.364z" fill="#FFF"></path></svg></span>
+      </div>
+    </div>
+    <div class="quote-container">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="application-container">
+    </div>
+  </footer>
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
