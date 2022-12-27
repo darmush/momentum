@@ -28,10 +28,10 @@ export function hidenBlock() {
     Array.from(checkboxes).forEach(function(checkbox){
         checkbox.addEventListener('click', function(e) {
             let nameBlock = e.target.id;
-            if (!checkbox.checked) {
-                document.querySelector(`.${nameBlock}`).style.opacity = '0';
-            } else {
+            if (checkbox.checked) {
                 document.querySelector(`.${nameBlock}`).style.opacity = '1';
+            } else {
+                document.querySelector(`.${nameBlock}`).style.opacity = '0';
             }
 
         })
