@@ -58,6 +58,7 @@ function reloadCheckboxes() {
         }
     })
 }
+window.addEventListener('load', setLocalStorage);
 
 // Выбор языка
 
