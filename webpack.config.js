@@ -28,7 +28,7 @@ module.exports = {
       template: path.resolve(__dirname, 'index.html'),
     }),
     new ESLintPlugin({
-      extensions: [`js`, `json` `jsx`, `ts`],
+      extensions: [`js`, `json`, `jsx`, `ts`],
       exclude: [`node_modules`],
     }),
   ],
