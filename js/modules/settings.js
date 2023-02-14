@@ -46,7 +46,7 @@ function setLocalStorage() {
     })
     reloadCheckboxes()
 }
-// setLocalStorage()
+setLocalStorage()
 
 function reloadCheckboxes() {
     Array.from(checkboxes).forEach(function(checkbox){

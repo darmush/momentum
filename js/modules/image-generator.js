@@ -1,15 +1,16 @@
 import { getTimeOfDay } from '../modules/greeting.js';
-import { setBgGitHub } from './image-slider.js';
+// import { setBgGitHub } from '../modules/image-slider.js';
 
 let timeOfDay = getTimeOfDay();
 let request;
 
 const body = document.querySelector('.body');
 
-const sourceGit = document.querySelector('.source-git');
+// const sourceGit = document.querySelector('.source-git');
 const sourceUnsplash = document.querySelector('.source-unsplash');
 const sourceFlickr = document.querySelector('.source-flickr');
 
+const languageButtonActtive = document.querySelector('.language-button-active');
 
 
 export async function setBgAPI() {
@@ -48,4 +49,4 @@ export async function setBgAPI() {
 
 function createRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min) + min)
-};
+}
