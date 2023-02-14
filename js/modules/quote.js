@@ -1,4 +1,4 @@
-import data from '../modules/data.json' assert { type: "json" };
+import data from '../modules/data.json';
 import {getRandomNum} from '../modules/image-slider.js';
 
 const quote = document.querySelector('.quote');
