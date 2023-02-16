@@ -11,6 +11,11 @@
     "build-prod": "webpack --node-env=production",
     "clear": "rd /s /q dist"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
