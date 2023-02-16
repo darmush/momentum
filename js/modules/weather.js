@@ -87,7 +87,6 @@ function getLocalStorage() {
      city.value = localStorage.getItem('city');
     }
     city.value = 'Temirtau';
-    getWeather();
 }
 window.addEventListener('load', getLocalStorage);
 
