@@ -2,12 +2,12 @@ import { getQuotes } from "./quote.js";
 import { getWeather } from './weather.js';
 
 let dataTranslation = {
-    'Good night' : 'Доброй ночи,', 
-    'Good morning' : 'Доброе утро,', 
-    'Good afternoon' : 'Добрый день,', 
-    'Good evening' : 'Добрый вечер,', 
-    'Enter name' : 'Введите имя', 
-    'Enter city' : 'Введите города', 
+    'Good night' : 'Доброй ночи,',
+    'Good morning' : 'Доброе утро,',
+    'Good afternoon' : 'Добрый день,',
+    'Good evening' : 'Добрый вечер,',
+    'Enter name' : 'Введите имя',
+    'Enter city' : 'Введите города',
     'Settings' : 'Настройки',
     'Player' : 'Плеер',
     'Weather' : 'Погода',

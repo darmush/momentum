@@ -8,7 +8,7 @@ const languageButtonEn = document.querySelector('.language-en');
 const languageButtonRu = document.querySelector('.language-ru');
 let randomNum;
 
-export function getQuotes() {  
+export function getQuotes() {
     randomNum = getRandomNum(1, data.length - 1);
     if (languageButtonEn.classList.contains('language-button-active')) {
         quote.textContent = `"${data[randomNum].en.text}"`;

@@ -87,7 +87,7 @@ function toggleLanguages(language) {
     languageButtonEn.classList.remove('language-button-active');
     languageButtonRu.classList.remove('language-button-active');
     language.classList.add('language-button-active');
-    
+
     changeLanguage(lang)
 }
 
