@@ -33,9 +33,9 @@ export async function setBgAPI() {
         } else if (sourceFlickr.classList.contains('source-button-active')) {
             img.src = data.photos.photo[createRandomNumber(0, (data.photos.photo).length)]['url_l'];
         }
-        img.onload = () => {      
+        img.onload = () => {
            body.style.backgroundImage = `url('${img.src}')`;
-        }; 
+        };
     } catch (error) {
         console.log(error)
         document.querySelector('.image-source-input').value = '';

@@ -14,9 +14,9 @@ let timeOfDay = getTimeOfDay();
 export function setBgGitHub() {
     const img = new Image();
     img.src = `https://raw.githubusercontent.com/darmush/momentum-backgrounds/main/${timeOfDay}/${randomNum}.jpg`;
-    img.onload = () => {      
+    img.onload = () => {
       body.style.backgroundImage = `url('https://raw.githubusercontent.com/darmush/momentum-backgrounds/main/${timeOfDay}/${randomNum}.jpg')`;
-    }; 
+    };
 }
 // setBgGitHub();
 
