@@ -18,7 +18,7 @@ let cityNotFound
 
 
 
-export async function getWeather() {  
+export async function getWeather() {
     setLanguage()
     let lang;
     if (document.querySelector('.language-button-active').getAttribute('data-language') == 'ru') {
@@ -28,7 +28,7 @@ export async function getWeather() {
     }
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=${lang}&appid=0d589b9bd0667f727dbfb66ed7706869&units=metric`;
     const res = await fetch(url);
-    const data = await res.json(); 
+    const data = await res.json();
 
 
     if (data.cod == 200) {
@@ -87,7 +87,6 @@ function getLocalStorage() {
      city.value = localStorage.getItem('city');
     }
     city.value = 'Temirtau';
-    getWeather();
 }
 window.addEventListener('load', getLocalStorage);
 

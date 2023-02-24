@@ -10,7 +10,7 @@ function showTime() {
     time.textContent = currentTime;
 
     setTimeout(showTime, 1000);
-    
+
     setTimeout(showDate, 1000);
     setTimeout(showGreeting, 1000);
     setTimeout(getTimeOfDay, 1000);

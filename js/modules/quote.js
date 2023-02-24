@@ -1,4 +1,4 @@
-import data from '../modules/data.json' assert { type: "json" };
+import data from '../modules/data.json';
 import {getRandomNum} from '../modules/image-slider.js';
 
 const quote = document.querySelector('.quote');
@@ -8,7 +8,7 @@ const languageButtonEn = document.querySelector('.language-en');
 const languageButtonRu = document.querySelector('.language-ru');
 let randomNum;
 
-export function getQuotes() {  
+export function getQuotes() {
     randomNum = getRandomNum(1, data.length - 1);
     if (languageButtonEn.classList.contains('language-button-active')) {
         quote.textContent = `"${data[randomNum].en.text}"`;

@@ -1,18 +1,16 @@
-import { getWeather } from './modules/weather.js';
-import date from './modules/clock.js';
-import time from './modules/clock.js';
-import greeting from './modules/greeting.js';
-import { setBgGitHub } from './modules/image-slider.js';
-import { setCity } from './modules/weather.js';
-import { getQuotes } from './modules/quote.js';
-import playList from './modules/playlist.js';
-import { createPlaylist } from './modules/audio-player.js';
-import { setAudioActive } from './modules/audio-player.js';
-import { setTitleSong } from './modules/audio-player.js';
-import { playAudio}  from './modules/audio-player.js';
-import { popupHiden } from './modules/settings.js';
-import { hidenBlock } from './modules/settings.js';
-import { setBgAPI } from './modules/image-generator.js';
-import { chooseSource } from './modules/settings.js';
-import { changeLanguage } from './modules/translate.js';
-import dataTranslation from './modules/translate.js';
+import "@babel/polyfill";
+import "../css/style.css";
+
+import './modules/settings.js';
+import './modules/translate.js';
+import './modules/clock.js';
+import './modules/clock.js';
+import './modules/greeting.js';
+import './modules/image-slider.js';
+import './modules/image-generator.js';
+import './modules/weather.js';
+import './modules/quote.js';
+import './modules/playlist.js';
+import './modules/audio-player.js';
+
+

@@ -109,10 +109,10 @@ function getProgressWidth() {
 // Переключение старта проигрыша по прогрессбару
 const progressBar = document.querySelector('.duration-player');
 progressBar.addEventListener("click", function(e) {
-    let progressValue = e.offsetX;  
+    let progressValue = e.offsetX;
     let progressValueWidth = progressValue/(progressBar.offsetWidth);
     // Проверяем, что не вышли за границы времени трека
-    if(progressValueWidth > 0 && progressValueWidth < 1) { 
+    if(progressValueWidth > 0 && progressValueWidth < 1) {
         restoreTime = 0;
         restoreTime = progressValue * durationCount / progressBar.offsetWidth;
         progressStatus.style.width = (((progressValueWidth) * 100) || 0) + '%';
@@ -159,7 +159,7 @@ playPrevButton.addEventListener('click', playPrev);
 const soundVolume = document.querySelector('.sound-volume');
 audio.volume = 0.5;
 let restoreValue;
-soundVolume.addEventListener('input', function() { 
+soundVolume.addEventListener('input', function() {
   audio.volume = soundVolume.value;
 });
 
@@ -179,7 +179,7 @@ function muter() {
 }
 
 const muteButton = document.querySelector('.mute-button');
-muteButton.addEventListener("click", muter); 
+muteButton.addEventListener("click", muter);
 
 
 
